@@ -77,7 +77,7 @@ mongodb:
     username: powerfuladmin
     database: echo
 
-clusterdomain: svc.cluster.local
+clusterdomain: cluster.local
     
 # resources: 
 #   requests:
