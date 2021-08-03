@@ -10,13 +10,13 @@ metadata:
 spec:
   releaseName: podinfo-dev
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:xtda4664/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
     image:
-      repository: stefanprodan/podinfo
-      tag: dev-hdtwcel9
+      repository: gcr.io/upbeat-flame-320411/echoapp
+      tag: dev-5
     replicaCount: 1
     hpa:
       enabled: false
