@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.conf.cfgmapName }}
+data:
+  PORT: {{ .Values.conf.port | quote }}
+  LOGLEVEL: {{ .Values.conf.loglevel | quote }}
+  PERSIST: {{ .Values.conf.persist | quote }}
+  DBNAME: {{ .Values.conf.dbname | quote }}
+    

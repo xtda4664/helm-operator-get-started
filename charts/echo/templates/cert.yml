@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: {{ .Values.issuer.certName }}
+spec:
+  secretName: {{ .Values.ingress.secretName }}
+  dnsNames:
+  - {{ .Values.ingress.hostName }}
+  issuerRef:
+    name: {{ .Values.issuer.name }}
+    kind: ClusterIssuer
+    group: {{ .Values.issuer.group }}

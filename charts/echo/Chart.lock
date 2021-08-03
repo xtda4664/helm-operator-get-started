@@ -1,0 +1,12 @@
+dependencies:
+- name: mongodb
+  repository: https://charts.bitnami.com/bitnami
+  version: 10.23.6
+- name: nginx-ingress-controller
+  repository: https://charts.bitnami.com/bitnami
+  version: 7.6.17
+- name: cert-manager
+  repository: https://charts.jetstack.io
+  version: v1.4.1
+digest: sha256:fee9b9cf7fdc3668238891e4e9a09deb0e0a3937b06ebf5e9a7f1617d93a0d79
+generated: "2021-07-30T09:50:13.81459363Z"

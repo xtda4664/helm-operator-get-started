@@ -11,7 +11,7 @@ spec:
   releaseName: echo
   chart:
     git: git@github.com:xtda4664/helm-operator-get-started
-    path: charts/echov5
+    path: charts/echo
     ref: master
   values:
     image:

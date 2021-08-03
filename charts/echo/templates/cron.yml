@@ -1,0 +1,23 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: {{ .Values.clrdb.cronjobName }}
+spec:
+  schedule: {{ .Values.clrdb.schedule | quote }}
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: {{ .Values.clrdb.container.name }}
+            image: {{ .Values.clrdb.container.image }}
+            imagePullPolicy: {{ .Values.clrdb.container.imagePullPolicy }}
+            envFrom:
+            - secretRef:
+                name: {{ .Values.clrdb.container.secretName }}
+            command: 
+              - mongo
+              - $(MONGODBURL) 
+              -  --eval
+              -  "db.echos.remove({})"
+          restartPolicy: {{ .Values.clrdb.restartpolicy }}

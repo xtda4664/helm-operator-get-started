@@ -2,4 +2,4 @@ FROM gcr.io/upbeat-flame-320411/echoapp:5.0.0
 
 ARG VERSION=unknown
 ARG GITCOMMIT=unknown
-ARG TESTPHRASE=2305t91
+ARG TESTPHRASE=19249wfae
