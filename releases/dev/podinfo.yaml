@@ -8,10 +8,10 @@ metadata:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: glob:dev-*
 spec:
-  releaseName: podinfo-dev
+  releaseName: echo
   chart:
     git: git@github.com:xtda4664/helm-operator-get-started
-    path: charts/podinfo
+    path: charts/echov5
     ref: master
   values:
     image:
