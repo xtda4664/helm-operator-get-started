@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: gcr.io/upbeat-flame-320411/echoapp
-      tag: dev-5
+      tag: dev-5.0.0
     replicaCount: 1
     hpa:
       enabled: false
