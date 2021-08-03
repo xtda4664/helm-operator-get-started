@@ -76,6 +76,8 @@ mongodb:
     rootPassword: xtda4664
     username: powerfuladmin
     database: echo
+
+clusterdomain: svc.cluster.local
     
 # resources: 
 #   requests:
