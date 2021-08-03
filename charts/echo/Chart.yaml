@@ -2,8 +2,8 @@ apiVersion: v2
 name: echo
 description: A Helm chart for echo
 type: application
-version: 0.1.0
-appVersion: "4.0"
+version: 0.1.1
+appVersion: "5.0"
 
 dependencies:
 - name: mongodb
